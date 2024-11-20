@@ -3,7 +3,7 @@ import "../styles/styleTop.css";
 import user from "../media/user.png";
 import { useNavigate } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({}) => {
   const navigate = useNavigate();
   const toggleBack = () => {
     navigate("/");

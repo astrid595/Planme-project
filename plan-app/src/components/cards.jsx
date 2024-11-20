@@ -1,22 +1,22 @@
 import React from "react";
-import "../styles/styleAct.css";
-import tick from "../media/tick.png";
+import "../styles/styles.css";
+import { CardDetails } from "../mockAPI";
 
-const ConfirmAct = () => {
+const Cards = ({ action, desc, time }) => {
   return (
-    <form action="">
-      <p className="close-btn">X</p>
-      <p className="title-act">"Go swimming"</p>
-      <p className="question">You want to do this</p>
-      <div className="act-sec">
-        <button className="out-btn">Outdoors</button>
-        <button className="in-btn">Indoors</button>
+    <div className="task">
+      <div className="task-info">
+        <p className="activity">{action}</p>
+        <p className="act-text">{desc}</p>
       </div>
-      <div className="tick-sec">
-        <img src={tick} alt="tick" className="tick-btn" />
+
+      <div className="act-bottom">
+        <p className="time">{time}</p>
+        <button className="option">Yes</button>
+        <button className="option">No</button>
       </div>
-    </form>
+    </div>
   );
 };
 
-export default ConfirmAct;
+export default Cards;

@@ -1,11 +1,14 @@
 import React from "react";
 import "../styles/styleAct.css";
+import { NavLink } from "react-router-dom";
 import tick from "../media/tick.png";
 
 const ConfirmAct = () => {
   return (
     <form action="">
-      <p className="close-btn">X</p>
+      <NavLink className="navlog" to="/ListPage">
+        <p className="close-btn">X</p>
+      </NavLink>
       <p className="title-act">"Go swimming"</p>
       <p className="question">You want to do this</p>
       <div className="act-sec">
