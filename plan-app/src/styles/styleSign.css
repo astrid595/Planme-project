@@ -43,7 +43,7 @@ body {
   width: 30%;
   padding: 15px 45px;
   color: white;
-  background-color: rgb(55, 55, 55);
+  background-color: #373737;
   border-radius: 30px;
   position: relative;
   font-size: 20px;
@@ -61,12 +61,12 @@ body {
 }
 
 .dnt {
-  color: rgb(55, 55, 55);
+  color: #373737;
   margin-left: 20%;
 }
 
 .sign {
-  color: rgb(246, 167, 0);
+  color: #f6a700;
   margin-left: 2%;
 }
 
@@ -78,7 +78,7 @@ body {
   margin-top: 20px;
   border: none;
   width: 40px;
-  color: rgb(55, 55, 55);
+  color: #373737;
   cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ input {
   text-align: center;
   padding: 15px 45px;
   color: white;
-  background-color: rgb(55, 55, 55);
+  background-color: #373737;
   border-radius: 30px;
   position: relative;
   font-size: 17px;

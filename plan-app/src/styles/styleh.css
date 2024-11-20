@@ -5,7 +5,7 @@ body {
 .screen {
   width: 390px;
   min-height: 844px;
-  background: white;
+  background: rgb(236, 236, 236);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
@@ -56,14 +56,14 @@ body {
   margin: 0 22.5%;
   padding: 3% 0;
   height: 30%;
-  width: 50px;
+  width: 50%;
   border: 1px solid black;
   background-color: #373737;
   border-radius: 30px;
   cursor: pointer;
   color: white;
   position: relative;
-  font-size: 10px;
+  font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -119,7 +119,7 @@ input {
   border: none;
   max-width: 90%;
   font-size: 17px;
-  border-bottom: 1px solid #747070;
+  border-bottom: 1px solid rgb(116, 112, 112);
 }
 
 .sign-btn {

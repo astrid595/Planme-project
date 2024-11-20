@@ -1,12 +1,11 @@
 .search-sec {
-    display: flex;
-    margin: 0 30px;
-    padding: 0;
-    border-bottom: 1px solid #747070;
-  }
-  
-  .iconSearch {
-    width: 15px;
-    height: 15px;
-  }
-  
+  display: flex;
+  margin: 0 30px;
+  padding: 0;
+  border-bottom: 1px solid #747070;
+}
+
+.iconSearch {
+  width: 15px;
+  height: 15px;
+}
