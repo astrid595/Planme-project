@@ -19,15 +19,17 @@ function Home() {
         <img src={intro} alt="" className="intro" />
       </div>
 
+
       <div>
-        <p className="title">Let's plan your week</p>
+        <p className="slogan">Let's plan your week</p>
       </div>
 
       <div>
-        <button className="start" onClick={toggleLogin}>
+        <button className="btn-login" onClick={toggleLogin}>
           Get started
         </button>
       </div>
+
 
       <div className="sign-sec">
         <p className="dnt">Don't have an account? </p>
