@@ -1,6 +1,7 @@
-require("dotenv").config(); // this is to use ".env" here
+import dotenv from "dotenv";
+dotenv.config(); // this is to use ".env" here
 import express, { json } from "express";
-import { createConnection } from "mysql2";
+import mysql from "mysql2";
 import cors from "cors";
 
 const app = express();
@@ -11,7 +12,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 
 // Database connection with our .env information!
 // the connection will not work if you dont create the .env i´ve sent you on whatsapp!
-const db = createConnection({
+const db = mysql.createConnection({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
   user: process.env.DB_USER,
@@ -65,12 +66,10 @@ app.post("/api/activities", (req, res) => {
         console.error("Database error:", err);
         return res.status(500).json({ error: "Database error" });
       }
-      res
-        .status(201)
-        .json({
-          message: "Activity added successfully",
-          activityId: results.insertId,
-        });
+      res.status(201).json({
+        message: "Activity added successfully",
+        activityId: results.insertId,
+      });
     }
   );
 });
