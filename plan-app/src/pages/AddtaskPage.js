@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/styleadd.css";
 import Phone from "../components/phone";
 import back from "../media/back.png";
-import ConfirmAct from "../components/confirmAct";
+import AddTask from "../components/addTask";
 
 function List() {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function List() {
         </div>
       </div>
 
-      <ConfirmAct />
+      <AddTask />
 
       <div className="add-sec">
         <p className="add-list">+</p>

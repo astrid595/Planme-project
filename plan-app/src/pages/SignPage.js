@@ -9,7 +9,6 @@ function Sign() {
   const toggleBack = () => {
     navigate("/");
   };
-  // const toggleSingUp = () => {};
 
   return (
     <div className="screen">

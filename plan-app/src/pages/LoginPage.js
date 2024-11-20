@@ -4,9 +4,13 @@ import "../styles/stylelog.css";
 import Phone from "../components/phone";
 import Logo from "../media/logob.png";
 
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-
+  const navigate = useNavigate();
+  const toggleBack = () => {
+    navigate("/");
+  };
   return (
     <div className="screen">
       <Phone />
@@ -23,16 +27,10 @@ function Login() {
           <input type="text" placeholder="Email" />
           <input type="text" placeholder="Password" />
         </form>
-        <div>
+        <NavLink className="navlog" to="/DashboardPage">
           <p className="log-btn">LOGIN</p>
-        </div>
-        <div className="regis-sec">
-          <p className="dnt">Don't have an account? </p>
-          <NavLink className="sign" to="/SignPage">
-            {" "}
-            Sign up
-          </NavLink>
-        </div>
+        </NavLink>
+        <div className="regis-sec"></div>
       </div>
 
       {/* <div>
@@ -41,12 +39,15 @@ function Login() {
 
       <div>
         <p className="start">Get started</p>
-      </div>
+      </div> */}
 
       <div className="sign-sec">
         <p className="dnt">Don't have an account? </p>
-        <p className="sign"> Sign up</p>
-      </div> */}
+        <NavLink className="sign" to="/SignPage">
+          {" "}
+          Sign up
+        </NavLink>
+      </div>
     </div>
   );
 }

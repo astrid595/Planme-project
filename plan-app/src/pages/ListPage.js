@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/styleT.css";
 import Phone from "../components/phone";
 import back from "../media/back.png";
 import Tasks from "../components/tasks";
 import { ListDetails } from "../mockList";
-import { useNavigate } from "react-router-dom";
 
 function List() {
   const navigate = useNavigate();
+  const [listDetails, setListDetails] = useState(ListDetails);
+
   const toggleBack = () => {
     navigate("/DashboardPage");
   };
+
+  const toggleAdd = () => {
+    navigate("/TaskPage");
+  };
+
+  const handleTaskClick = (description) => {
+    navigate("/TaskDetailsPage", { state: { description } });
+  };
+
+  const [tasks, setTasks] = useState(ListDetails);
+
+  const addNewTask = (newTask) => {
+    setTasks((prevTasks) => [...prevTasks, newTask]);
+  };
+
   return (
     <div className="screenW">
       <Phone />
@@ -24,12 +41,18 @@ function List() {
         </div>
       </div>
 
-      {ListDetails.map((item) => (
-        <Tasks desc={item.description} />
+      {listDetails.map((item) => (
+        <Tasks
+          key={item.id}
+          desc={item.description}
+          onClick={() => handleTaskClick(item.description)}
+        />
       ))}
 
       <div className="add-sec">
-        <p className="add-list">+</p>
+        <p className="add-list" onClick={toggleAdd}>
+          +
+        </p>
       </div>
     </div>
   );

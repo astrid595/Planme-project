@@ -1,10 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/styleT.css";
 import Phone from "../components/phone";
 import back from "../media/back.png";
 import Tasks from "../components/tasks";
 import { TodayDetails } from "../mockAPI";
-import { useNavigate } from "react-router-dom";
 
 function Today() {
   const navigate = useNavigate();
