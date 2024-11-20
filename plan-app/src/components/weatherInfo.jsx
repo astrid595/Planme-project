@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/styleW.css";
 import user from "../media/user.png";
 
-const Menu = ({}) => {
+const Menu = () => {
   return (
     <div className="weather-row">
       <div>

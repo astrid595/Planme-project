@@ -4,7 +4,7 @@ import internet from "../media/internet.png";
 import signal from "../media/signal.png";
 import bat from "../media/half-battery.png";
 
-const Phone = ({}) => {
+const Phone = () => {
   return (
     <div className="phone">
       <p>9:41</p>
