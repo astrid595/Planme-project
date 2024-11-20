@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import AddTask from "../components/addTask";
+import AddTask from "../components/addTask";
 import { ListDetails } from "../mockList";
 
 const ParentList = () => {
@@ -9,12 +9,12 @@ const ParentList = () => {
     setTasks((prevTasks) => [...prevTasks, newTask]);
   };
 
-//   const newTask = {
-//     id: Math.floor(Math.random() * 10000),
-//     activity,
-//     description,
-//     time,
-//   };
+  const newTask = {
+    id: Math.floor(Math.random() * 10000),
+    activity,
+    description,
+    time,
+  };
 
   addNewTask(newTask);
 
