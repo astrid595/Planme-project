@@ -1,0 +1,101 @@
+body {
+  width: 390px;
+  max-height: 844px;
+}
+.screenW {
+  width: 390px;
+  min-height: 844px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.phone {
+  display: flex;
+}
+
+.icons-sec {
+  text-align: right;
+  padding: 20px 20px 0 0;
+  position: absolute;
+  left: 300px;
+}
+
+.icons {
+  width: 18px;
+  height: 18px;
+  color: white;
+  padding-right: 8px;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 0;
+  padding: 0 15%;
+}
+
+.back-sec {
+  margin: 10px 20px;
+}
+
+.back-btn {
+  margin-top: 20px;
+  border: none;
+  width: 40px;
+  color: rgb(55, 55, 55);
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 25%;
+}
+
+.title-list {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 15%;
+}
+
+.task-list {
+  background-color: white;
+  margin: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 15px #ffb71d72, 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+}
+
+.selec {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin: 5% 10px;
+  cursor: pointer;
+}
+
+.add-sec {
+  display: sticky;
+  position: relative;
+  padding: 0 40%;
+}
+
+.add-list {
+  color: rgb(255, 182, 29);
+  font-size: 45px;
+  width: 50px;
+  height: 45px;
+  border: 2px solid rgb(255, 182, 29);
+  border-radius: 50%;
+  padding: 8% 10% 15% 8%;
+  top: 0;
+  text-align: center;
+  cursor: pointer;
+}

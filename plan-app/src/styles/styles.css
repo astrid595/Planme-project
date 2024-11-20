@@ -1,0 +1,115 @@
+body {
+  width: 390px;
+  max-height: 844px;
+}
+.screen {
+  width: 390px;
+  min-height: 844px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.phone p {
+  padding: 20px 0 0 40px;
+  margin: 0;
+}
+
+.icons-sec {
+  text-align: right;
+  padding: 20px 20px 0 0;
+  position: absolute;
+  left: 300px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.day {
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 35px;
+}
+
+.info-current {
+  display: flex;
+}
+
+.month {
+  font-size: 20px;
+  padding: 0;
+  margin: 0 50px;
+  color: rgb(116, 112, 112);
+}
+
+.current {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  padding: 5px 9px;
+  margin: 0 10px;
+  border: 2px solid;
+  border-radius: 22px;
+}
+
+.sugg-task {
+  color: #747070;
+  padding-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.task {
+  margin: 8px 15px;
+  padding: 5px 15px;
+  background-color: #ffb71d62;
+  border-radius: 30px;
+  color: black;
+}
+
+.task-info {
+  margin: 10px;
+}
+
+.task-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.activity {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.act-text {
+  font-size: 20px;
+}
+
+.act-bottom {
+  display: flex;
+  margin-left: 10px;
+}
+
+.time {
+  font-size: 30px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.option {
+  font-size: 18px;
+  background-color: white;
+  padding: 5px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.option:hover {
+  background-color: black;
+  color: white;
+}

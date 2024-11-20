@@ -1,0 +1,162 @@
+body {
+  width: 390px;
+  max-height: 844px;
+}
+.screenW {
+  width: 390px;
+  min-height: 844px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.phone {
+  display: flex;
+}
+
+.icons-sec {
+  text-align: right;
+  padding: 20px 20px 0 0;
+  position: absolute;
+  left: 300px;
+}
+
+.icons {
+  width: 18px;
+  height: 18px;
+  color: white;
+  padding-right: 8px;
+}
+
+.title-act {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+  padding: 8%;
+  border-bottom: 2px solid #747070;
+}
+
+.question {
+  text-align: center;
+  font-style: italic;
+}
+
+.back-sec {
+  margin: 10px 30px;
+  display: flex;
+}
+
+.back-btn {
+  margin-top: 30px;
+  width: 40px;
+  height: 40px;
+  color: #373737;
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 25%;
+}
+
+.title-list {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 15%;
+}
+
+.close-btn {
+  text-align: right;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5e5c5c;
+  cursor: pointer;
+}
+
+form {
+  margin: 20px;
+  padding: 0px 20px 10px 20px;
+  height: 300px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #747070;
+}
+
+.act-sec {
+  display: flex;
+  margin: 10px 10%;
+}
+
+.out-btn {
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: #16de1937;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.in-btn {
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: #1d7fff37;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tick-sec {
+  text-align: center;
+}
+
+.tick-btn {
+  height: 40px;
+  cursor: pointer;
+}
+
+.task-list {
+  background-color: rgb(186, 183, 183);
+  margin: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 15px rgb(121, 118, 118), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+}
+
+.selec {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin: 5% 10px;
+  cursor: pointer;
+}
+
+.add-sec {
+  display: sticky;
+  position: relative;
+  padding: 0 40%;
+}
+
+.add-list {
+  color: rgba(255, 182, 29, 0.37);
+  font-size: 45px;
+  width: 50px;
+  height: 45px;
+  border: 2px solid rgba(255, 182, 29, 0.37);
+  border-radius: 50%;
+  padding: 8% 10% 15% 8%;
+  top: 0;
+  text-align: center;
+  cursor: pointer;
+}

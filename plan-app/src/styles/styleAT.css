@@ -1,0 +1,32 @@
+.add {
+    display: sticky;
+    border: 1px solid black;
+    margin: 0 37.2%;
+    height: 50px;
+    width: 30%;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .add-text {
+    text-align: left;
+    padding-left: 15%;
+  }
+  
+  .add-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    margin: 10px 5px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
