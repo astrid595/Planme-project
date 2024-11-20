@@ -4,22 +4,17 @@ import "../styles/stylelog.css";
 import Phone from "../components/phone";
 import Logo from "../media/logob.png";
 
-import { useNavigate } from "react-router-dom";
-
 function Login() {
-  const navigate = useNavigate();
-  const toggleBack = () => {
-    navigate("/");
-  };
+
   return (
-    <div className="screen">
+    <div className="screen-two">
       <Phone />
 
       <div className="images">
         <img src={Logo} alt="" className="logo" />
       </div>
 
-      <div className="login">
+      <div className="for-log">
         <NavLink className="navlog" to="/">
           <p className="close-btn">X</p>
         </NavLink>
