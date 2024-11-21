@@ -50,7 +50,7 @@ body {
   cursor: pointer;
 }
 
-.today-title, .week-title {
+.today-title, .week-title, .list-title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 30px;
   margin: 15px 0;
