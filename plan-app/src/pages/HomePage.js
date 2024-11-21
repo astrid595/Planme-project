@@ -11,13 +11,12 @@ function Home() {
   const navigate = useNavigate();
   const [loginPopupOpen, setLoginPopupOpen] = useState(false);
 
-  return loginPopupOpen ? (
-    <LoginPopup
-      open={loginPopupOpen}
-      onClose={() => setLoginPopupOpen(false)}
-    />
-  ) : (
+  return (
     <div className="screen">
+      <LoginPopup
+        open={loginPopupOpen}
+        onClose={() => setLoginPopupOpen(false)}
+      />
       <Phone />
       <div className="images">
         <img src={Logo} alt="" className="logo" />
