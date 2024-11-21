@@ -74,13 +74,18 @@ body {
   margin: 10px 20px;
 }
 
-.back-btn {
+
+
+.btn-back {
+  display: flex;
   margin-top: 20px;
   border: none;
   width: 40px;
-  color: #373737;
+  height: 40px;
+  background-color: white;
   cursor: pointer;
 }
+
 
 .sign-title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -89,8 +94,10 @@ body {
   padding: 0 5%;
 }
 
-form {
-  margin: 10% 5%;
+.sign-form {
+  margin: 5%;
+  border: none;
+  box-shadow: none;
 }
 
 input {
@@ -99,7 +106,7 @@ input {
   background: none;
   border: none;
   max-width: 90%;
-  font-size: 12px;
+  font-size: 17px;
   border-bottom: 1px solid rgb(116, 112, 112);
 }
 

@@ -9,12 +9,10 @@ const ParentList = () => {
     setTasks((prevTasks) => [...prevTasks, newTask]);
   };
 
-//   const newTask = {
-//     id: Math.floor(Math.random() * 10000),
-//     activity,
-//     description,
-//     time,
-//   };
+  const newTask = {
+    id: Math.floor(Math.random() * 10000),
+    
+  };
 
   addNewTask(newTask);
 

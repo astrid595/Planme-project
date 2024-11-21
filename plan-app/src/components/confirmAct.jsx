@@ -5,7 +5,7 @@ import tick from "../media/tick.png";
 
 const ConfirmAct = () => {
   return (
-    <form action="">
+    <form action="" className="conf-form">
       <NavLink className="navlog" to="/ListPage">
         <p className="close-btn">X</p>
       </NavLink>

@@ -25,7 +25,7 @@ function Home() {
       </div>
 
       <div>
-        <p className="title">Let's plan your week</p>
+        <p className="slogan">Let's plan your week</p>
       </div>
 
       <div>

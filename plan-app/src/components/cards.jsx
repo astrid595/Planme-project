@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/styles.css";
-import { CardDetails } from "../mockAPI";
+// import { CardDetails } from "../mockAPI";
 
 const Cards = ({ action, desc, time }) => {
   return (

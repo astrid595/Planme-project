@@ -15,15 +15,15 @@ function Sign() {
       <Phone />
 
       <div className="back-sec">
-        <button className="back-btn" onClick={toggleBack}>
-          <img src={back} alt="" className="back-btn" />
+        <button className="btn-back" onClick={toggleBack}>
+          <img src={back} alt="" className="btn-back" />
         </button>
 
         <p className="sign-title">Create an account</p>
       </div>
 
       <div>
-        <form action="">
+        <form action="" className="sign-form">
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="DD/MMM/YYYY" />
           <input type="text" placeholder="Phone Number" />
