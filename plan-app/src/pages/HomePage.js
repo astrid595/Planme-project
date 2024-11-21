@@ -29,7 +29,7 @@ function Home() {
 
       <div>
         <button
-          className="start"
+          className="btn-login"
           onClick={() => setLoginPopupOpen(!loginPopupOpen)}
         >
           Get started
