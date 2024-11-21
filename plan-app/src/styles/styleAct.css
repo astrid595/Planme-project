@@ -99,7 +99,7 @@ input {
 .out-btn {
   margin: 10px;
   padding: 10px 30px;
-  background-color: #16de1937;
+  background-color: rgba(22, 222, 25, 0.216);
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -108,7 +108,7 @@ input {
 .in-btn {
   margin: 10px;
   padding: 10px 30px;
-  background-color: #1d7fff37;
+  background-color: rgba(29, 127, 255, 0.216);
   border: none;
   border-radius: 20px;
   cursor: pointer;
