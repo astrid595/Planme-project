@@ -17,10 +17,10 @@ function Today() {
       <Phone />
 
       <div className="back-sec">
-        <button className="back-btn" onClick={toggleBack}>
-          <img src={back} alt="" className="back-btn" />
+        <button className="btn-back" onClick={toggleBack}>
+          <img src={back} alt="" className="btn-back" />
         </button>
-        <div className="title">
+        <div className="today-title">
           <p>Today</p>
         </div>
       </div>
