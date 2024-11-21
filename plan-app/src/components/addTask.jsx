@@ -40,6 +40,7 @@ const AddTask = ({ addNewTask }) => {
             placeholder="Activity"
             value={activity}
             onChange={(e) => setActivity(e.target.value)}
+            className="type-input"
           />
           <input
             type="text"

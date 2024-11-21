@@ -79,10 +79,10 @@ form {
   border-radius: 20px;
 }
 
-input {
+.type-input {
   margin: 10px;
   padding: 10px;
-  border-bottom: 1px solid #747070;
+  border-bottom: 1px solid rgb(116, 112, 112);
 }
 
 .confirm-sec {

@@ -12,7 +12,7 @@ import { TodayDetails } from "../mockAPI";
 
 function Dashboard() {
   return (
-    <div className="screen">
+    <div className="screen-dash">
       <Phone />
 
       <Topsec />

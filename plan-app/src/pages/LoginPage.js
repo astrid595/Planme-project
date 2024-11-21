@@ -19,8 +19,8 @@ function Login() {
           <p className="close-btn">X</p>
         </NavLink>
         <form action="" className="form-login">
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Password" />
+          <input type="text" placeholder="Email" className="login-input"/>
+          <input type="text" placeholder="Password" className="login-input"/>
         </form>
         <NavLink className="navlog" to="/DashboardPage">
           <p className="log-btn">LOGIN</p>

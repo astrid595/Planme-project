@@ -2,10 +2,19 @@
   display: flex;
   margin: 0 30px;
   padding: 0;
-  border-bottom: 1px solid #747070;
+  border-bottom: 1px solid rgb(116, 112, 112);
 }
 
 .iconSearch {
   width: 15px;
   height: 15px;
+}
+
+.search-input {
+  padding: 0;
+  margin: 0 5px;
+  background: none;
+  border: none;
+  width: 345px;
+  font-size: 17px;
 }

@@ -100,7 +100,7 @@ body {
   box-shadow: none;
 }
 
-input {
+.sign-input {
   margin: 5px 5px;
   padding: 5% 2%;
   background: none;

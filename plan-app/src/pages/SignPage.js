@@ -24,11 +24,11 @@ function Sign() {
 
       <div>
         <form action="" className="sign-form">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="DD/MMM/YYYY" />
-          <input type="text" placeholder="Phone Number" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Password" />
+          <input type="text" placeholder="Name" className="sign-input"/>
+          <input type="text" placeholder="DD/MMM/YYYY" className="sign-input"/>
+          <input type="text" placeholder="Phone Number" className="sign-input"/>
+          <input type="text" placeholder="Email" className="sign-input"/>
+          <input type="text" placeholder="Password" className="sign-input"/>
         </form>
       </div>
 

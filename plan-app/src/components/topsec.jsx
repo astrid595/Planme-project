@@ -10,7 +10,7 @@ const Menu = () => {
   };
   return (
     <div className="top-sec">
-      <button className="back-btn" onClick={toggleBack}>
+      <button className="btn-home" onClick={toggleBack}>
         <img src={user} alt="" className="top-menu" />
       </button>
       <p className="welcome">Welcome back, Anna</p>
