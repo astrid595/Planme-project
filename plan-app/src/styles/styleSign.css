@@ -104,8 +104,8 @@ body {
   margin: 5px 5px;
   padding: 5% 2%;
   background: none;
+  width: 90%;
   border: none;
-  max-width: 90%;
   font-size: 17px;
   border-bottom: 1px solid rgb(116, 112, 112);
 }
