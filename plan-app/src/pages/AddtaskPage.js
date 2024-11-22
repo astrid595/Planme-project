@@ -16,8 +16,8 @@ function List() {
       <Phone />
 
       <div className="back-sec">
-        <button className="back-btn" onClick={toggleBack}>
-          <img src={back} alt="" className="back-btn" />
+        <button className="btn-back" onClick={toggleBack}>
+          <img src={back} alt="" className="btn-back" />
         </button>
         <div className="title-list">
           <p>To do list</p>

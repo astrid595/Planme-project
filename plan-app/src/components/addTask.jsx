@@ -47,12 +47,14 @@ const AddTask = ({ addNewTask }) => {
             placeholder="Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            className="type-input"
           />
           <input
             type="text"
             placeholder="Time"
             value={time}
             onChange={(e) => setTime(e.target.value)}
+            className="type-input"
           />
         </>
       )}
