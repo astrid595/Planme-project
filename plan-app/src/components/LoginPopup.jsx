@@ -12,7 +12,7 @@ const LoginPopup = ({ open, onClose }) => {
 
   const handleLogin = () => {
     if (email === "test@example.com" && password === "password") {
-      navigate("/dashboard");
+      navigate("/DashboardPage");
     } else {
       setLoginError("Invalid email or password");
     }
