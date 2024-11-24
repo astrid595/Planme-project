@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/styles.css";
-// import { CardDetails } from "../mockAPI";
+import { TaskContext } from "./TaskContext"; // Import TaskContext
 
-const Cards = ({ action, desc, time }) => {
+const Cards = ({ id, action, desc, time }) => {
+  const { addToTodayTasks, addToWeekTasks } = useContext(TaskContext); // Access context methods
+
+  const handleYesClick = () => {
+    addToTodayTasks({ id, action, desc, time });
+  };
+
+  const handleNoClick = () => {
+    addToWeekTasks({ id, action, desc, time });
+  };
+
   return (
     <div className="task">
       <div className="task-info">
@@ -12,8 +22,12 @@ const Cards = ({ action, desc, time }) => {
 
       <div className="act-bottom">
         <p className="time">{time}</p>
-        <button className="option">Yes</button>
-        <button className="option">No</button>
+        <button className="option" onClick={handleYesClick}>
+          Yes
+        </button>
+        <button className="option" onClick={handleNoClick}>
+          No
+        </button>
       </div>
     </div>
   );

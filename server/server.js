@@ -29,17 +29,64 @@ db.connect((err) => {
   console.log("Connected YEEEEEEEEY.");
 });
 
-// Route to get activities for a user
+// Route to get activities for a specific user
 app.get("/api/activities/:userId", (req, res) => {
   const { userId } = req.params;
-  const query = "SELECT * FROM activities WHERE user_id = ?";
 
+  const query = "SELECT * FROM activities WHERE user_id = ?";
   db.query(query, [userId], (err, results) => {
     if (err) {
       console.error("Database error:", err);
       return res.status(500).json({ error: "Database error" });
     }
-    res.status(200).json(results);
+    res.status(200).json(results); // Return the activities
+  });
+});
+
+// Route to register a new user
+app.post("/api/register", (req, res) => {
+  let { name, birthdate, phone, email, password } = req.body;
+
+  // Convert our current date format from DD/MM/YYYY to YYYY-MM-DD 
+  //remember to fix that later, but for now just use the "/" when registering an user
+  const [day, month, year] = birthdate.split("/");
+  birthdate = `${year}-${month}-${day}`;
+
+  const query = `
+    INSERT INTO users (name, birthdate, phone, email, password) 
+    VALUES (?, ?, ?, ?, ?)
+  `;
+
+  db.query(query, [name, birthdate, phone, email, password], (err, results) => {
+    if (err) {
+      console.error("Database error:", err);
+      return res.status(500).json({ error: "Database error" });
+    }
+    res.status(201).json({ message: "User registered successfully" });
+  });
+});
+
+app.post("/api/login", (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ error: "Email and password are required" });
+  }
+
+  const query = `SELECT * FROM users WHERE email = ? AND password = ?`;
+  db.query(query, [email, password], (err, results) => {
+    if (err) {
+      console.error("Database error:", err);
+      return res.status(500).json({ error: "Database error" });
+    }
+
+    if (results.length === 0) {
+      return res.status(401).json({ error: "Invalid email or password" });
+    }
+
+    // Login successful
+    const user = results[0];
+    res.status(200).json({ message: "Login successful", userId: user.id,name: user.name, });
   });
 });
 
@@ -48,30 +95,28 @@ app.post("/api/activities", (req, res) => {
   const {
     user_id,
     activity_name,
-    activity_category,
+    activity_description,
     activity_length,
+    activity_category,
     indoors,
   } = req.body;
 
   const query = `
-    INSERT INTO activities (user_id, activity_name, activity_category, activity_length, indoors) 
-    VALUES (?, ?, ?, ?, ?)
-  `;
+  INSERT INTO activities (user_id, activity_name, activity_description, activity_length, activity_category, indoors)
+  VALUES (?, ?, ?, ?, ?, ?)
+`;
 
-  db.query(
-    query,
-    [user_id, activity_name, activity_category, activity_length, indoors],
-    (err, results) => {
-      if (err) {
-        console.error("Database error:", err);
-        return res.status(500).json({ error: "Database error" });
-      }
-      res.status(201).json({
-        message: "Activity added successfully",
-        activityId: results.insertId,
-      });
+db.query(
+  query,
+  [user_id, activity_name, activity_description, activity_length, activity_category, indoors],
+  (err, results) => {
+    if (err) {
+      console.error("Database error:", err);
+      return res.status(500).json({ error: "Database error" });
     }
-  );
+    res.status(201).json({ message: "Activity added successfully." });
+  }
+);
 });
 
 // Route to delete a specific activity

@@ -25,10 +25,6 @@ function List() {
       </div>
 
       <AddTask />
-
-      <div className="add-sec">
-        <p className="add-list">+</p>
-      </div>
     </div>
   );
 }

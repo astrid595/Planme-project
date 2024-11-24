@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/styleT.css";
 import Phone from "../components/phone";
 import back from "../media/back.png";
 import Tasks from "../components/tasks";
-import { TodayDetails } from "../mockAPI";
+import { TaskContext } from "../components/TaskContext"; // Import TaskContext
 
 function Today() {
   const navigate = useNavigate();
+  const { todayTasks } = useContext(TaskContext); // Access todayTasks from TaskContext
+
   const toggleBack = () => {
     navigate("/DashboardPage");
   };
@@ -25,9 +27,19 @@ function Today() {
         </div>
       </div>
 
-      {TodayDetails.map((item) => (
-        <Tasks desc={item.description} />
-      ))}
+      {/* Render tasks from the todayTasks list */}
+      {todayTasks.length === 0 ? (
+        <p className="no-tasks">No tasks for today.</p>
+      ) : (
+        todayTasks.map((item) => (
+          <Tasks
+            key={item.id} // Use task ID as the key
+            desc={item.desc} // Pass task description
+            time={item.time} // Optionally pass time if required
+            action={item.action} // Optionally pass action if required
+          />
+        ))
+      )}
     </div>
   );
 }

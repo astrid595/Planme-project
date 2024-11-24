@@ -5,10 +5,8 @@ import Phone from "../components/phone";
 import Logo from "../media/logob.png";
 import intro from "../media/intro.png";
 import LoginPopup from "../components/LoginPopup";
-import { useNavigate } from "react-router-dom";
 
-function Home() {
-  const navigate = useNavigate();
+function HomePage() {
   const [loginPopupOpen, setLoginPopupOpen] = useState(false);
 
   return (
@@ -47,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
