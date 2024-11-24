@@ -93,7 +93,7 @@ function List() {
       <div className="selected-tasks">
         <h3>Selected Tasks:</h3>
         {selectedTasks.map((task, index) => (
-          <p key={index}>{task.activity_name}</p> // Display selected task names
+          <p key={index}>{task.activity_description}</p> // Display selected task names
         ))}
       </div>
     </div>
